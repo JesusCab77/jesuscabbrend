@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> GALERIADECORADA </title> 
+
+	  <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  
+    <link rel="stylesheet" href="style.css">
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+
+	<style type="text/css">
+		
+		.body{
+			
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+			background: white;
+		}
+
+		 .titulo{
+           	font-family: serif; 
+             font-weight: 600;
+              font-size: 50px;
+           }
+
+
+		section {
+			padding: 20px;
+			width: 1280px;
+			margin: 40px auto;
+		}
+
+		section ul{
+			display: flex;
+			margin-bottom: 10px;
+
+		}
+
+		section ul li {
+			list-style: none;
+			background:  #98FB98 ;
+			padding: 8px 15px;
+			margin: 5px;
+			letter-spacing: 1px;
+			cursor: pointer;
+			background-position: center; 
+
+		}
+
+		.list{
+			text-decoration: none;
+			color: black;
+		}
+
+		.list:hover{
+			background: SpringGreen;
+        transition: 1.3s;
+
+		}
+
+		section ul li.active {
+			background: #98FB98;
+			color: #000000;
+		}
+
+		.ceramica{
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+
+		.ceramica .itemBox{
+			position: relative;
+			width: 300px;
+			height: 300px;
+			margin: 5px;
+
+		}
+
+		.ceramica .itemBox img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+	</style>
+ </head>
+   <body class="body">
+
+   	 <nav class="green">
+        <div class="nav-wrapper container">
+            <span class="nav-header">
+           <center><h1>CERÁMICA DECORADA</h1></center>
+            </span>
+            </ul>
+        </div>
+    </nav>
+    <h3><p class="page-description text-center">Estos son los cabados en la decoracion que Cerámica Isabel realiza</p></h3>
+  	<section>
+
+  	<ul>
+  		<li class="list active" data-filter= "all">TODAS</li>
+  		<li class="list" data-filter= "alcancias">ALCANCÍAS</li>
+  		<li class="list" data-filter= "macetas">MACETAS</li>
+  		<li class="list" data-filter= "relojes">RELOJES</li>
+  		<li class="list" data-filter= "tercias">TERCIAS <br>PARED</li>
+  		
+  	</ul>
+
+  	
+  		<div class="tz-gallery">
+
+  	<div class="ceramica">
+
+  		<div class="itemBox alcancias"><a class="lightbox" href="CERAMICA\ALCANCIA\MARRANO.png"> <img src="CERAMICA\ALCANCIA\MARRANO.png"></a></div>
+
+  		<div class="itemBox alcancias"><a class="lightbox" href="CERAMICA\ALCANCIA\UNICORNIO.png"><img src="CERAMICA\ALCANCIA\UNICORNIO.png"></a></div>
+
+
+  		
+  		<div class="itemBox macetas"><a class="lightbox" href="CERAMICA\MACETAS\BORREGO.png"> <img src="CERAMICA\MACETAS\BORREGO.png"></a></div>
+
+  		<div class="itemBox macetas"><a class="lightbox" href="CERAMICA\MACETAS\GROOT.png"><img src="CERAMICA\MACETAS\GROOT.png"></a></div>
+
+  		<div class="itemBox macetas"><a class="lightbox" href="CERAMICA\MACETAS\LIZA.png"><img src="CERAMICA\MACETAS\LIZA.png"></a></div>
+
+  		<div class="itemBox macetas"><a class="lightbox" href="CERAMICA\MACETAS\NAUTILUS.png"><img src="CERAMICA\MACETAS\NAUTILUS.png"></a></div>
+
+  		<div class="itemBox macetas"><a class="lightbox" href="CERAMICA\MACETAS\TORNILLO.png"><img src="CERAMICA\MACETAS\TORNILLO.png"></a></div>
+
+  		<div class="itemBox macetas"><a class="lightbox" href="CERAMICA\MACETAS\regadera.png"><img src="CERAMICA\MACETAS\regadera.png"></a></div>
+
+
+  		
+  		<div class="itemBox relojes"><a class="lightbox" href="CERAMICA\RELOJES\AMERICA1.png"><img src="CERAMICA\RELOJES\AMERICA1.png"></a></div>
+
+  		<div class="itemBox relojes"><a class="lightbox" href="CERAMICA\RELOJES\CANASTA1.png"><img src="CERAMICA\RELOJES\CANASTA1.png"></a></div>
+
+  		<div class="itemBox relojes"><a class="lightbox" href="CERAMICA\RELOJES\CHEF1.png"><img src="CERAMICA\RELOJES\CHEF1.png"></a></div>
+
+  		<div class="itemBox relojes"><a class="lightbox" href="CERAMICA\RELOJES\CHIVAS1.png"><img src="CERAMICA\RELOJES\CHIVAS1.png"></a></div>
+
+  		<div class="itemBox relojes"><a class="lightbox" href="CERAMICA\RELOJES\CRUZAZUL1.png"><img src="CERAMICA\RELOJES\CRUZAZUL1.png"></a></div>
+
+  		<div class="itemBox relojes"><a class="lightbox" href="CERAMICA\RELOJES\JARRA1.png"><img src="CERAMICA\RELOJES\JARRA1.png"></a></div>
+
+  		<div class="itemBox relojes"><a class="lightbox" href="CERAMICA\RELOJES\PERA1.png"><img src="CERAMICA\RELOJES\PERA1.png"></div>
+
+  		<div class="itemBox relojes"><a class="lightbox" href="CERAMICA\RELOJES\GIRASOL1.png"><img src="CERAMICA\RELOJES\GIRASOL1.png"></a></div>
+
+  		<div class="itemBox relojes"><a class="lightbox" href="CERAMICA\RELOJES\SANDIA1.png"><img src="CERAMICA\RELOJES\SANDIA1.png"></a></div>
+
+  		<div class="itemBox relojes"><a class="lightbox" href="CERAMICA\RELOJES\VACA1.png"><img src="CERAMICA\RELOJES\VACA1.png"></a></div>
+
+
+
+  		<div class="itemBox tercias"><a class="lightbox" href="CERAMICA\TERCIAS\ARDILLA.png"><img src="CERAMICA\TERCIAS\ARDILLA.png"></a></div>
+
+  		<div class="itemBox tercias"><a class="lightbox" href="CERAMICA\TERCIAS\ESTRELLA.png"><img src="CERAMICA\TERCIAS\ESTRELLA.png"></a></div>
+  		
+  		  </div>
+
+ 	</div>
+ </section>
+
+   
+  <script src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+   $(document).ready(function(){
+    $('.list').click(function(){
+        const value = $(this).attr('data-filter');
+        if (value =='RELOJES'){
+            $('.itemBox').show('1000');
+        }
+
+        else{
+            $('.itemBox').not('.'+value).hide('1000');
+            $('.itemBox').filter('.'+value).show('1000');
+        }
+
+      })
+
+   })
+
+   </script>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+
+  </body>
+</html>

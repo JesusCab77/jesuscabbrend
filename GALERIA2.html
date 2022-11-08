@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PERSONALIZARGALERIA</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <style type="text/css">
+        .titulo {
+            font-family: serif;
+            font-weight: 600;
+            font-size: 50px;
+        }
+
+        section {
+            padding: 20px;
+            width: 1280px;
+            margin: 40px auto;
+        }
+
+        section ul {
+            display: flex;
+            margin-bottom: 10px;
+
+        }
+
+        section ul li {
+            list-style: none;
+            background: #98FB98;
+            padding: 8px 15px;
+            margin: 5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            background-position: center;
+
+        }
+
+        .list {
+            text-decoration: none;
+            color: black;
+        }
+
+        .list:hover {
+            background: SpringGreen;
+            transition: 1.3s;
+
+        }
+
+        section ul li.active {
+            background: #98FB98;
+            color: #000000;
+        }
+
+        .ceramica {
+            display: flex;
+            flex-wrap: wrap;
+            z-index: 0 !important;
+
+        }
+
+        .ceramica .itemBox {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 15px;
+            z-index: 0 !important;
+        }
+
+        .ceramica .itemBox img {
+            position: absolute;
+            top: 8%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .boton {
+
+            background-color: #c9b63e;
+            margin-top: 45px;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            padding: 5px;
+            width: 17%;
+            border-color: #2aa542;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="green">
+        <div class="nav-wrapper container">
+            <span class="nav-header">
+                <center>
+                    <h1>CERÁMICA A PERZONALIZAR</h1>
+                </center>
+            </span>
+            </ul>
+        </div>
+    </nav>
+
+    <h3>
+        <p class="page-description text-center">Selecciona el modelo de ceramica que le desees personalalizar su
+            decorado a tu gusto</p>
+    </h3>
+
+    <section>
+
+        <ul>
+            <li class="list active" data-filter="all">TODAS</li>
+            <li class="list" data-filter="alcancias">ALCANCÍAS</li>
+            <li class="list" data-filter="macetas">MACETAS</li>
+            <li class="list" data-filter="relojes">RELOJES</li>
+            <li class="list" data-filter="tercias">TERCIAS <br>PARED</li>
+
+        </ul>
+        <div class="ceramica">
+
+            <div class="itemBox alcancias">
+                <div style="z-index: 2 !important;">
+                    <button id="botones" style="color: rgb(15, 102, 20);  font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 4%;">
+                    <img id="marranito" style="" src="EDICION/ALCANCIA/MARRANO1.png">
+                </div>
+            </div>
+
+            <div class="itemBox alcancias">
+                <div style="z-index: 2 !important;">
+                    <button id="botones" style="color: rgb(15, 102, 20);  font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/ALCANCIA/UNICORNIO1.png">
+                </div>
+            </div>
+
+
+
+            <div class="itemBox macetas">
+                <div style="z-index: 2 !important;">
+                    <button onclick="btnborrego()" style="color: rgb(15, 102, 20);  font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/MACETAS/BORREGO1.png">
+                </div>
+            </div>
+
+            <div class="itemBox macetas">
+                <div style="z-index: 2 !important;">
+                    <button onclick="btnregadera()" style="color: rgb(15, 102, 20); font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/MACETAS/REGADERA1.png">
+                </div>
+            </div>
+
+            <div class="itemBox relojes">
+                <div style="z-index: 2 !important;">
+                    <button onclick="btnamerica()" style="color: rgb(15, 102, 20);  font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/RELOJES/AMERICA1.png">
+                </div>
+            </div>
+
+            <div class="itemBox relojes">
+                <div style="z-index: 2 !important;">
+                    <button onclick="btncanasta()" style="color: rgb(15, 102, 20);  font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/RELOJES/CANASTA1.png">
+                </div>
+            </div>
+
+            <div class="itemBox relojes">
+                <div style="z-index: 2 !important;">
+                    <button onclick="btnchef()" style="color: rgb(15, 102, 20); font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/RELOJES/CHEF1.png">
+                </div>
+            </div>
+
+            <div class="itemBox relojes">
+                <div style="z-index: 2 !important;">
+                    <button onclick="btncruzazul()" style="color: rgb(15, 102, 20);  font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/RELOJES/CRUZAZUL1.png">
+                </div>
+            </div>
+
+            <div class="itemBox relojes">
+                <div style="z-index: 2 !important;">
+                    <button onclick="btnjarra()" style="color: rgb(15, 102, 20); font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/RELOJES/JARRA1.png">
+                </div>
+            </div>
+
+            <div class="itemBox relojes">
+                <div style="z-index: 2 !important;">
+                    <button onclick="btnpera()" style="color: rgb(15, 102, 20);  font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/RELOJES/PERA1.png">
+                </div>
+            </div>
+
+            <div class="itemBox relojes">
+                <div style="z-index: 2 !important;">
+                    <button onclick="btnvaca()" style="color: rgb(15, 102, 20); font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/RELOJES/VACA1.png">
+                </div>
+            </div>
+
+
+
+            <div class="itemBox tercias">
+                <div style="z-index: 2 !important;">
+                    <button onclick="btnardillas()" style="color: rgb(15, 102, 20); font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/TERCIAS/ARDILLAS.png">
+                </div>
+            </div>
+
+            <div class="itemBox tercias">
+                <div style="z-index: 2 !important;">
+                    <button onclick="btnestrellas()" style="color: rgb(15, 102, 20);font-size: 15px;"><i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+                <div style="margin-top: 14%;">
+                    <img id="marranito" style="" src="EDICION/TERCIAS/ESTRELLAS.png">
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <center>
+        <button class="boton"><a style="text-decoration: none;" href="EDITOR.html"> PERSONALIZAR</button></a>
+    </center>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/FileSaver.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.list').click(function () {
+                const value = $(this).attr('data-filter');
+                if (value == 'RELOJES') {
+                    $('.itemBox').show('1000');
+                }
+
+                else {
+                    $('.itemBox').not('.' + value).hide('1000');
+                    $('.itemBox').filter('.' + value).show('1000');
+                }
+
+            })
+
+        })
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+    <script src="js/galeria2.js"></script>
+
+</body>
+
+</html>
